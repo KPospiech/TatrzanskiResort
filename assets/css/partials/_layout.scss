@@ -1,0 +1,517 @@
+@import 'variables';
+@import 'animate';
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap');
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav {
+  background-color: #fff;
+
+  .nav-link {
+    color: $main-color !important;
+    font-weight: 600;
+    text-transform: uppercase;
+
+    &::after {
+      content: '';
+      display: block;
+      width: 0;
+      height: 4px;
+      background: $main-color;
+      transition: width 0.4s;
+    }
+    &:hover {
+      color: rgb(151, 151, 151) !important;
+      &::after {
+        width: 100%;
+      }
+    }
+  }
+}
+
+header {
+  .navbar {
+    .logo {
+      width: 150px;
+      margin-left: 20%;
+    }
+  }
+}
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.header {
+  margin-top: 5%;
+  position: relative;
+  &__text {
+    color: #fff;
+    width: 400px;
+    h1 {
+      position: absolute;
+      bottom: 15%;
+      left: 10%;
+      font-size: 3.5rem;
+      font-weight: 200;
+      text-transform: uppercase;
+      text-align: center;
+      background-color: $main-color;
+      padding: 20px;
+      letter-spacing: 5px;
+    }
+  }
+  @media screen and (max-width: 500px) {
+    margin-top: 30%;
+    h1 {
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.about-investment {
+  background: url('../../../assets/images/mountain.png') no-repeat right;
+
+  position: relative;
+  box-sizing: border-box;
+  &__container {
+    padding: 0 10%;
+  }
+  &__text {
+    margin-top: 10%;
+
+    h2 {
+      text-transform: uppercase;
+      font-size: 1.7rem;
+      font-weight: 600;
+    }
+
+    p {
+      font-weight: 200;
+      margin: 10% 0;
+    }
+  }
+  &__details {
+    margin-top: 8%;
+    text-transform: uppercase;
+    img {
+      display: block;
+      margin: 20px auto;
+    }
+    h3 {
+      font-size: 1rem;
+      text-align: center;
+    }
+
+    .scale-element {
+      &:hover {
+        transform: scale(1.2);
+        transition: ease-in-out 0.5s;
+      }
+    }
+  }
+}
+
+.movie {
+  width: 90%;
+  margin: 5% 0;
+  padding: 0;
+}
+
+.more-information {
+  margin: 10%;
+  .card {
+    border: none;
+    padding: 3%;
+    &-title {
+      color: $main-color;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    &-body {
+      padding: 40px 0;
+    }
+  }
+}
+
+.localization {
+  height: 500px;
+  margin: 0;
+
+  @media screen and (max-width: 450px) {
+    height: 100%;
+  }
+  &-map {
+    height: 500px;
+  }
+  &-description {
+    background-color: $main-color;
+    color: #fff;
+    padding: 5%;
+
+    h2 {
+      text-transform: uppercase;
+      font-weight: 400;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.gallery {
+  width: 100%;
+  //   height: 800px;
+  background: url('../../../assets/images/mauntain-dark.png') $main-color
+    no-repeat left;
+
+  @media screen and (max-width: 450px) {
+    height: 100%;
+  }
+
+  h2 {
+    padding-top: 5%;
+    color: #fff;
+    text-align: center;
+  }
+
+  .owl-carousel {
+    padding: 10% 0;
+    position: relative;
+
+    @media screen and (max-width: 450px) {
+      height: 100%;
+    }
+  }
+
+  .owl-item {
+    img {
+      height: 350px;
+      object-fit: cover;
+      @media screen and (max-width: 400px) {
+        height: 250px;
+      }
+    }
+  }
+
+  .owl-prev,
+  .owl-next {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: 50%;
+    background: none;
+    img {
+      width: 30px;
+    }
+  }
+
+  .owl-next {
+    right: 30%;
+  }
+
+  .owl-prev {
+    left: 30%;
+  }
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  background: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: none;
+}
+
+.gallery-elements {
+  background: url('../../../assets/images/mauntain-dark.png') $main-color
+    no-repeat left;
+  // height: 100%;
+  h2 {
+    color: #fff;
+    text-align: center;
+    padding: 5% 0;
+  }
+}
+
+.my-gallery {
+  width: 100%;
+  figure {
+    display: block;
+    margin: 5px auto;
+    height: 350px;
+    img {
+      height: 350px;
+      object-fit: cover;
+    }
+  }
+  figcaption {
+    display: none;
+  }
+}
+
+.contact {
+  background: $main-color;
+  padding: 30px 0;
+  margin: 0;
+  h2 {
+    color: #fff;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+  p {
+    text-align: center;
+    color: #fff;
+
+    a {
+      color: #fff;
+    }
+  }
+
+  a {
+    color: rgb(255, 145, 0);
+    display: block;
+    text-align: center;
+  }
+
+  .form-control {
+    color: #fff;
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid rgb(255, 145, 0);
+  }
+  input {
+    border: none;
+    border-bottom: 1px solid rgb(255, 145, 0);
+    background: transparent;
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .form-check-label {
+    color: rgb(167, 167, 167);
+    font-size: 0.6rem;
+    margin: 10px 30px;
+  }
+
+  .komunikat {
+    color: rgb(255, 166, 0);
+  }
+
+  .send {
+    color: rgb(255, 145, 0);
+    border: 1px solid rgb(255, 145, 0);
+    border-radius: 0;
+    margin: 15px auto;
+  }
+}
+
+.apartments-list {
+  padding: 30px 0;
+
+  h3 {
+    margin: 40px 0;
+  }
+
+  table {
+    color: $dark-color;
+    font-weight: 200;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+    cursor: pointer;
+
+    i {
+      color: $dark-color;
+    }
+
+    td {
+      border-top: none !important;
+    }
+
+    thead {
+      border-bottom: 3px solid rgba(255, 255, 255, 0.459);
+      text-transform: uppercase;
+      color: $main-color;
+      font-weight: 600;
+      border-bottom: 1px solid $main-color;
+    }
+    tbody {
+      tr {
+        &:hover {
+          background: $main-color;
+          color: #fff;
+          svg {
+            color: #fff;
+          }
+        }
+      }
+      td {
+        border-bottom: 1px solid #3d3d54;
+
+        &:nth-child(6) {
+          font-weight: 400;
+        }
+      }
+
+      i {
+        font-size: 1.2rem;
+      }
+    }
+
+    svg {
+      font-size: 1.8rem;
+      color: $main-color;
+    }
+  }
+
+  .table-details {
+    color: $dark-color;
+    h2 {
+      color: $dark-color;
+    }
+    &:hover {
+      background: transparent;
+    }
+  }
+
+  .table-details-texts {
+    background: #fff;
+    color: $dark-color;
+
+    ul {
+      list-style-type: none;
+      padding: 0;
+
+      li {
+        padding: 10px 0;
+        font-size: 1.1rem;
+
+        a {
+          color: $dark-color;
+        }
+      }
+    }
+  }
+  .line {
+    border-bottom: 2px solidrgba(255, 255, 255, 0.459);
+    width: 100%;
+    display: block;
+    padding-top: 10%;
+  }
+
+  .hidden-row {
+    padding: 0;
+    border: none;
+  }
+}
+
+.available {
+  color: $dark-color;
+}
+
+.booked {
+  color: rgb(0, 151, 0);
+
+  i {
+    color: rgb(0, 151, 0) !important;
+  }
+}
+.reservation {
+  color: rgb(255, 153, 0);
+
+  i {
+    color: rgb(255, 153, 0) !important;
+  }
+  :nth-child(6) {
+    visibility: hidden;
+  }
+  :nth-child(7) {
+    visibility: hidden;
+  }
+}
+
+.sold {
+  color: rgb(194, 0, 0);
+
+  i {
+    color: rgb(194, 0, 0) !important;
+  }
+  :nth-child(6) {
+    visibility: hidden;
+  }
+  :nth-child(7) {
+    visibility: hidden;
+  }
+}
+
+.description-container {
+  padding: 20px 0;
+  h2 {
+    color: $dark-color;
+  }
+}
+
+footer {
+  background: $main-color;
+  color: #fff;
+  p {
+    font-size: 0.7rem;
+    width: 100%;
+    text-align: center;
+    padding: 5% 0;
+  }
+  .line {
+    border-bottom: 1px solid rgb(63, 63, 63);
+    width: 100%;
+  }
+}
+
+.rent {
+  padding: 0;
+
+  h3 {
+    padding: 20px 0;
+  }
+
+  .about-text {
+    margin: auto;
+    text-align: center;
+    padding: 20px 0;
+
+    a {
+      color: $main-color;
+    }
+
+    img {
+      width: 200px;
+    }
+  }
+}
+
+.vat {
+  padding: 30px 0;
+}
+
+.investor {
+  margin: 20px 0;
+  img {
+    display: block;
+    margin: 10px auto;
+  }
+
+  p {
+    margin: 10px 0;
+    font-size: 1.2rem;
+
+    a {
+      color: $main-color;
+    }
+  }
+}

@@ -1,0 +1,571 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,400&display=swap");
+@-webkit-keyframes heading {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+@keyframes heading {
+  0% {
+    top: -50px;
+  }
+  100% {
+    top: 50%;
+  }
+}
+
+.row {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+nav {
+  background-color: #fff;
+}
+
+nav .nav-link {
+  color: #063452 !important;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+nav .nav-link::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 4px;
+  background: #063452;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
+}
+
+nav .nav-link:hover {
+  color: #979797 !important;
+}
+
+nav .nav-link:hover::after {
+  width: 100%;
+}
+
+header .navbar .logo {
+  width: 150px;
+  margin-left: 20%;
+}
+
+.hide {
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
+
+.header {
+  margin-top: 5%;
+  position: relative;
+}
+
+.header__text {
+  color: #fff;
+  width: 400px;
+}
+
+.header__text h1 {
+  position: absolute;
+  bottom: 15%;
+  left: 10%;
+  font-size: 3.5rem;
+  font-weight: 200;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: #063452;
+  padding: 20px;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 500px) {
+  .header {
+    margin-top: 30%;
+  }
+  .header h1 {
+    font-size: 1.5rem;
+  }
+}
+
+.about-investment {
+  background: url("../../../assets/images/mountain.png") no-repeat right;
+  position: relative;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.about-investment__container {
+  padding: 0 10%;
+}
+
+.about-investment__text {
+  margin-top: 10%;
+}
+
+.about-investment__text h2 {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+
+.about-investment__text p {
+  font-weight: 200;
+  margin: 10% 0;
+}
+
+.about-investment__details {
+  margin-top: 8%;
+  text-transform: uppercase;
+}
+
+.about-investment__details img {
+  display: block;
+  margin: 20px auto;
+}
+
+.about-investment__details h3 {
+  font-size: 1rem;
+  text-align: center;
+}
+
+.about-investment__details .scale-element:hover {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: ease-in-out 0.5s;
+  transition: ease-in-out 0.5s;
+}
+
+.movie {
+  width: 90%;
+  margin: 5% 0;
+  padding: 0;
+}
+
+.more-information {
+  margin: 10%;
+}
+
+.more-information .card {
+  border: none;
+  padding: 3%;
+}
+
+.more-information .card-title {
+  color: #063452;
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.more-information .card-body {
+  padding: 40px 0;
+}
+
+.localization {
+  height: 500px;
+  margin: 0;
+}
+
+@media screen and (max-width: 450px) {
+  .localization {
+    height: 100%;
+  }
+}
+
+.localization-map {
+  height: 500px;
+}
+
+.localization-description {
+  background-color: #063452;
+  color: #fff;
+  padding: 5%;
+}
+
+.localization-description h2 {
+  text-transform: uppercase;
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.gallery {
+  width: 100%;
+  background: url("../../../assets/images/mauntain-dark.png") #063452 no-repeat left;
+}
+
+@media screen and (max-width: 450px) {
+  .gallery {
+    height: 100%;
+  }
+}
+
+.gallery h2 {
+  padding-top: 5%;
+  color: #fff;
+  text-align: center;
+}
+
+.gallery .owl-carousel {
+  padding: 10% 0;
+  position: relative;
+}
+
+@media screen and (max-width: 450px) {
+  .gallery .owl-carousel {
+    height: 100%;
+  }
+}
+
+.gallery .owl-item img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+@media screen and (max-width: 400px) {
+  .gallery .owl-item img {
+    height: 250px;
+  }
+}
+
+.gallery .owl-prev,
+.gallery .owl-next {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  background: none;
+}
+
+.gallery .owl-prev img,
+.gallery .owl-next img {
+  width: 30px;
+}
+
+.gallery .owl-next {
+  right: 30%;
+}
+
+.gallery .owl-prev {
+  left: 30%;
+}
+
+.owl-theme .owl-nav [class*='owl-'] {
+  background: none;
+}
+
+.owl-theme .owl-nav [class*='owl-']:hover {
+  background: none;
+}
+
+.gallery-elements {
+  background: url("../../../assets/images/mauntain-dark.png") #063452 no-repeat left;
+}
+
+.gallery-elements h2 {
+  color: #fff;
+  text-align: center;
+  padding: 5% 0;
+}
+
+.my-gallery {
+  width: 100%;
+}
+
+.my-gallery figure {
+  display: block;
+  margin: 5px auto;
+  height: 350px;
+}
+
+.my-gallery figure img {
+  height: 350px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.my-gallery figcaption {
+  display: none;
+}
+
+.contact {
+  background: #063452;
+  padding: 30px 0;
+  margin: 0;
+}
+
+.contact h2 {
+  color: #fff;
+  text-align: center;
+  padding-bottom: 30px;
+}
+
+.contact p {
+  text-align: center;
+  color: #fff;
+}
+
+.contact p a {
+  color: #fff;
+}
+
+.contact a {
+  color: #ff9100;
+  display: block;
+  text-align: center;
+}
+
+.contact .form-control {
+  color: #fff;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid #ff9100;
+}
+
+.contact input {
+  border: none;
+  border-bottom: 1px solid #ff9100;
+  background: transparent;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.contact .form-check-label {
+  color: #a7a7a7;
+  font-size: 0.6rem;
+  margin: 10px 30px;
+}
+
+.contact .komunikat {
+  color: #ffa600;
+}
+
+.contact .send {
+  color: #ff9100;
+  border: 1px solid #ff9100;
+  border-radius: 0;
+  margin: 15px auto;
+}
+
+.apartments-list {
+  padding: 30px 0;
+}
+
+.apartments-list h3 {
+  margin: 40px 0;
+}
+
+.apartments-list table {
+  color: #1b1b1b;
+  font-weight: 200;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  cursor: pointer;
+}
+
+.apartments-list table i {
+  color: #1b1b1b;
+}
+
+.apartments-list table td {
+  border-top: none !important;
+}
+
+.apartments-list table thead {
+  border-bottom: 3px solid rgba(255, 255, 255, 0.459);
+  text-transform: uppercase;
+  color: #063452;
+  font-weight: 600;
+  border-bottom: 1px solid #063452;
+}
+
+.apartments-list table tbody tr:hover {
+  background: #063452;
+  color: #fff;
+}
+
+.apartments-list table tbody tr:hover svg {
+  color: #fff;
+}
+
+.apartments-list table tbody td {
+  border-bottom: 1px solid #3d3d54;
+}
+
+.apartments-list table tbody td:nth-child(6) {
+  font-weight: 400;
+}
+
+.apartments-list table tbody i {
+  font-size: 1.2rem;
+}
+
+.apartments-list table svg {
+  font-size: 1.8rem;
+  color: #063452;
+}
+
+.apartments-list .table-details {
+  color: #1b1b1b;
+}
+
+.apartments-list .table-details h2 {
+  color: #1b1b1b;
+}
+
+.apartments-list .table-details:hover {
+  background: transparent;
+}
+
+.apartments-list .table-details-texts {
+  background: #fff;
+  color: #1b1b1b;
+}
+
+.apartments-list .table-details-texts ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.apartments-list .table-details-texts ul li {
+  padding: 10px 0;
+  font-size: 1.1rem;
+}
+
+.apartments-list .table-details-texts ul li a {
+  color: #1b1b1b;
+}
+
+.apartments-list .line {
+  border-bottom: 2px solidrgba(255, 255, 255, 0.459);
+  width: 100%;
+  display: block;
+  padding-top: 10%;
+}
+
+.apartments-list .hidden-row {
+  padding: 0;
+  border: none;
+}
+
+.available {
+  color: #1b1b1b;
+}
+
+.booked {
+  color: #009700;
+}
+
+.booked i {
+  color: #009700 !important;
+}
+
+.reservation {
+  color: #ff9900;
+}
+
+.reservation i {
+  color: #ff9900 !important;
+}
+
+.reservation :nth-child(6) {
+  visibility: hidden;
+}
+
+.reservation :nth-child(7) {
+  visibility: hidden;
+}
+
+.sold {
+  color: #c20000;
+}
+
+.sold i {
+  color: #c20000 !important;
+}
+
+.sold :nth-child(6) {
+  visibility: hidden;
+}
+
+.sold :nth-child(7) {
+  visibility: hidden;
+}
+
+.description-container {
+  padding: 20px 0;
+}
+
+.description-container h2 {
+  color: #1b1b1b;
+}
+
+footer {
+  background: #063452;
+  color: #fff;
+}
+
+footer p {
+  font-size: 0.7rem;
+  width: 100%;
+  text-align: center;
+  padding: 5% 0;
+}
+
+footer .line {
+  border-bottom: 1px solid #3f3f3f;
+  width: 100%;
+}
+
+.rent {
+  padding: 0;
+}
+
+.rent h3 {
+  padding: 20px 0;
+}
+
+.rent .about-text {
+  margin: auto;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.rent .about-text a {
+  color: #063452;
+}
+
+.rent .about-text img {
+  width: 200px;
+}
+
+.vat {
+  padding: 30px 0;
+}
+
+.investor {
+  margin: 20px 0;
+}
+
+.investor img {
+  display: block;
+  margin: 10px auto;
+}
+
+.investor p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+}
+
+.investor p a {
+  color: #063452;
+}
+/*# sourceMappingURL=main.css.map */
